@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo Link](https://github.com/qayoommunawar/Bloggr-Fully-Responsive-Landing-Page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github Live Page](https://qayoommunawar.github.io/Bloggr-Fully-Responsive-Landing-Page/)
 
 ## My process
 
@@ -86,4 +86,4 @@ toggleButton.addEventListener('click', () => {
 
 ## Acknowledgments
 
-Very thankful to frontend community and particulary @marziajalil for making it to work so far. 
+Very thankful to frontend community and particulary @marziajalil for making it to work so far.
