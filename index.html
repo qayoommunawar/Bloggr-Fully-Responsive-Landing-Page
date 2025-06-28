@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | [Blogr]</title>
+
+  
+</head>
+<body>
+  <div class="bg-hero">
+    <header class="wrapper">
+      <nav class="flex-row justify-between">
+        <!-- Logo -->
+        <a href="index.html" aria-label="Home">
+          <img src="images/logo.svg" alt="" class="logo" aria-hidden="true">
+        </a>
+
+        <!-- Hamburger Button For Small Screens -->
+        <button type="button" class="nav-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <img src="images/icon-hamburger.svg" alt="" aria-hidden="true" class="toggle-icon">
+        </button>
+
+        <!-- Desktop Menu -->
+        <div class="desktop-menu-wrapper">
+          <ul class="nav-links">
+            <li class="has-submenu">
+              <button type="button" class="btn-submenu" aria-haspopup="true" aria-expanded="false" aria-controls="product-submenu-desktop">
+                <span class="link flex-row justify-center item-center">
+                  Product <img src="images/icon-arrow-dark.svg" alt="" class="arrow">
+                </span>
+              </button>
+              <ul id="product-submenu-desktop" class="submenu visually-hidden">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <button type="button" class="btn-submenu" aria-haspopup="true" aria-expanded="false" aria-controls="company-submenu-desktop">
+                <span class="link flex-row justify-center item-center">
+                  Company <img src="images/icon-arrow-dark.svg" alt="" class="arrow">
+                </span>
+              </button>
+              <ul id="company-submenu-desktop" class="submenu visually-hidden">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <button type="button" class="btn-submenu" aria-haspopup="true" aria-expanded="false" aria-controls="connect-submenu-desktop">
+                <span class="link flex-row justify-center item-center">
+                  Connect <img src="images/icon-arrow-dark.svg" alt="" class="arrow">
+                </span>
+              </button>
+              <ul id="connect-submenu-desktop" class="submenu visually-hidden">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="call-to-action flex-row item-center">
+            <button type="button" class="btn-cta" aria-label="Login Button">Login</button>
+            <button type="button" class="btn-dark" aria-label="Sign Up Button">Sign Up</button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Wrapper -->
+        <div class="mobile-menu-wrapper flex-col justify-center" id="mobile-menu">
+          <ul class="nav-links">
+            <li class="has-submenu">
+              <button type="button" class="btn-submenu" aria-haspopup="true" aria-expanded="false" aria-controls="product-submenu">
+                <span class="link flex-row justify-center item-center">
+                  Product <img src="images/icon-arrow-dark.svg" alt="" class="arrow">
+                </span>
+              </button>
+              <ul id="product-submenu" class="submenu visually-hidden">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <button type="button" class="btn-submenu" aria-haspopup="true" aria-expanded="false" aria-controls="company-submenu">
+                <span class="link flex-row justify-center item-center">
+                  Company <img src="images/icon-arrow-dark.svg" alt="" class="arrow">
+                </span>
+              </button>
+              <ul id="company-submenu" class="submenu visually-hidden">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <button type="button" class="btn-submenu" aria-haspopup="true" aria-expanded="false" aria-controls="connect-submenu">
+                <span class="link flex-row justify-center item-center">
+                  Connect <img src="images/icon-arrow-dark.svg" alt="" class="arrow">
+                </span>
+              </button>
+              <ul id="connect-submenu" class="submenu visually-hidden">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="call-to-action flex-col item-center">
+            <button type="button" class="btn-cta" aria-label="Login Button">Login</button>
+            <button type="button" class="btn-dark" aria-label="Sign Up Button">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+     <!-- Hero Section -->
+    <section class="wrapper hero flex-col-center gap-sml ">
+      <h1 class="main-heading">
+        A modern publishing platform
+      </h1>
+      <p class="main-text">
+        Grow your audience and build your online brand
+      </p>
+      <div class="hero-btn flex-row justify-center gap-sml">
+        <button type="button" class="btn-light" aria-label="Hero Button Start Free">
+          Start for Free
+        </button>
+        <button type="button" class="btn-transparent" aria-label="Hero Button Learn More">
+          Learn More
+        </button>
+      </div>
+    </section>
+  </div>
+  <main>
+    <!-- Introi Section -->
+    <h2 class="med-heading">
+      Designed for the future
+    </h2>
+    <section class="intro wrapper">
+      
+      <div class="intro-grid flex-row-center gap-md justify-center">
+      
+        <picture class="intro-img">
+            <source media="(min-width: 780px)" srcset="images/illustration-editor-desktop.svg">
+            <img src="images/illustration-editor-mobile.svg" alt="">
+        </picture>
+        
+        <div class="intro-text flex-col gap-sml">
+          <h3 class="sml-heading">
+            Introducing an extensible editor
+          </h3>
+          <p class="main-text">
+            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.
+          </p>
+          <h3 class="sml-heading">
+            Robust content management
+          </h3>
+          <p class="main-text">
+            Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control..
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Section Infrastructure -->
+    <section class="wrapper infrastructure flex-row-center gap-md">
+      
+      <img src="images/illustration-phones.svg" alt="" aria-hidden="true">
+      
+      <div class="infra-text gap-sml flex-col">
+        <h3 class="sml-heading">
+          State of the Art Infrastructure
+        </h3>
+        <p class="main-text">
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </div>
+      <img src="images/bg-pattern-circles.svg" alt="" class="infra-bg">
+    </section>
+    <!-- Section use -->
+    <section class="wrapper use flex-row-center gap-md">
+      
+      <picture>
+        <source media="(min-width: 780px)" srcset="images/illustration-laptop-desktop.svg">
+        <img src="images/illustration-laptop-mobile.svg" alt="">
+      </picture>
+      
+      <div class="use-text gap-sml flex-col">
+        <h3 class="sml-heading">
+            Free, open, simple
+        </h3>
+        <p class="main-text">
+            Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn..
+        </p>
+        <h3 class="sml-heading">
+            Powerful tooling
+        </h3>
+        <p class="main-text">
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.
+        </p>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer>
+    
+    <div class="grid-footer gap-md">
+      <!-- List 1 -->
+      <a href="index.html" aria-label="Home">
+        <img src="images/logo.svg" alt="" class="logo" aria-hidden="true">
+      </a>
+      <section>
+        <h4 id="product">
+          Product
+        </h4>
+        <ul class="footer-links">
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+      </section>
+      <!-- List 2 -->
+      <section>
+        <h4 id="company">
+          Company
+        </h4>
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </section>
+      <!-- List 2 -->
+      <section>
+        <h4 id="connect">
+          Connect
+        </h4>
+        <ul class="footer-links">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+<script src="js/script.js"></script>  
+</body>
+</html>

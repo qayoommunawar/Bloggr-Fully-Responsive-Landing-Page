@@ -1,0 +1,139 @@
+/* wrapper */
+.wrapper{
+    /* background-color: var(--color-white); */
+    padding: var(--size-md);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+/* lists */
+ul {
+    list-style: none;
+    color: var(--color-white);
+}
+
+/* anchor tag */
+a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+
+
+/* flex */
+.flex-row{
+    display: flex;
+}
+
+.flex-row-center{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.item-center{
+    align-items: center;
+}
+
+/* gaps */
+
+.gap-lg{
+    gap: var(--size-lg);
+}
+
+.gap-md{
+    gap:var(--size-md);
+}
+
+.gap-sml{
+    gap: var(--size-sml);
+}
+
+/* button */
+button{
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    padding: calc(var(--size-sml)/2) var(--size-sml);
+    border-radius: var(--size-md);
+}
+
+.btn-light{
+    background-color: var(--color-white);
+    font-weight: 600;
+    color: var(--color-red-500);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+@media(min-width: 780px){
+    .btn-light:hover{
+        background-color: var(--color-red-400);
+        color: var(--color-white);
+    }
+}
+
+.btn-transparent{
+    background: transparent;
+    font-weight: 600;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+}
+
+h1{
+    font-size: clamp(1.5rem, 0.9512rem + 2.3415vw, 3rem);
+    font-weight: 500;
+}
+
+h2,h3{
+    font-size: calc(var(--size-md)/1.5);
+    font-weight: 500;
+    color: var(--color-blue-900);
+    line-height: 1.2;
+}
+
+section.infrastructure h3{
+    color: var(--color-white);
+}
+
+h4{
+    color: var(--color-white);
+    font-weight: 500;
+    margin-block-end: var(--size-md);
+    font-size: clamp(1rem, 5vw, 1.25rem);
+}
+
+section.hero h1{
+    color: var(--color-white);
+}
+
+main p{
+    color: var(--color-gray-600);
+}
+
+section.infrastructure p{
+    color: var(--color-white);
+}
+
+picture{
+    display: flex;
+    justify-content: center;
+}
+
